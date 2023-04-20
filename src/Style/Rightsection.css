@@ -1,0 +1,46 @@
+.right_section {
+    margin-left: 10px;
+    height: 100%;
+    width: 17rem;
+  }
+  .right_section_content {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 100%;
+   
+  }
+  .right_section_content_items {
+    display: flex;
+    align-items: center;
+    max-height: 11.0rem;
+    margin: 0px;
+    padding-left: 10px;
+  }
+  .right_section_content_items img {
+    max-height: 10.5rem;
+    width: 90%;
+    padding-bottom: 17px;
+  }
+  .right_section_content_items .title {
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-left: 5px;
+    padding: 0px 0px 0px opx;
+  }
+  .right_section_content_items .desc {
+    font-weight: 400;
+    font-size: 12px;
+  }
+  
+  .right_section_ads {
+    margin-top: 12px;
+    width: 16rem;
+  }
+  .right_section_ads video {
+    height: 100%;
+    width: 100%;
+  }
+
+ 

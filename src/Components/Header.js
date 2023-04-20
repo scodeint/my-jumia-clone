@@ -39,7 +39,7 @@ function Header() {
   return (
     <div className='header'>
         <Link to="/">
-          < img className = "header__logo"  src='https://1000logos.net/wp-content/uploads/2022/02/Jumia-Logo.png' alt='' />
+          < img className = "header__logo"  src='/images/sendme.png' alt='' />
         </Link>
 
         <div className='header__search'>

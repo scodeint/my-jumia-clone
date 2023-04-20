@@ -13,11 +13,14 @@ import GamesIcon from '@mui/icons-material/Games';
 import SportsRugbyIcon from '@mui/icons-material/SportsRugby';
 import AirportShuttleIcon from '@mui/icons-material/AirportShuttle';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import Rightsection from './Rightsection';
+import Heading from './Heading';
+import Slider from './Slider';
 
 function Sidebar() {
   return (
     <div className='sidebar'>
-        <div className="categories">
+        <div className="side__categories">
         <Link to="/supermarket">
           <div className="category_items">
             <LocalGroceryStoreIcon />
@@ -92,25 +95,8 @@ function Sidebar() {
         </Link>
       </div>
 
-     
-      <div className="showcase">
-        <span className="home_image" />
-      </div>
-
-      <div className="right_section off">
-        <div className="right_section_content ">
-          <div className="right_section_content_items">
-          <div className="right_section_ads">
-              <img src="https://ng.jumia.is/cms/0-1-cpr/2022/june-14/free-delivery_218x184.png" alt="Help center" />  
-          </div>
-          </div>
-         
-          <div className="right_section_content_items">
-            <img src="https://ng.jumia.is/cms/0-1-initiatives/jforce/2023/JForce.png" alt="Sell" /> 
-          </div>
-        </div>
-       
-      </div>
+         <Slider />
+        <Rightsection />
     </div>
   )
 }

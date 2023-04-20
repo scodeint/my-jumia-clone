@@ -1,0 +1,166 @@
+ 
+ .sidebar {
+    display: flex;
+    margin: 10px 15px;
+    height: 24rem;
+  }
+
+  .categories {
+    margin: 0 10px 0 0px;
+    background-color: #ffffff;
+    height: 100%;
+    width: 14rem;
+  }
+
+  .category_items {
+    display: flex;
+    align-items: center;
+    margin: 4px 4px 4px 10px;
+    padding: 2px;
+    color: rgb(57, 51, 51);
+  }
+  .categories a:hover {
+    color: #e4811c;
+  }
+  .category_items span {
+    font-size: 10px;
+    margin-left: 5px;
+  }
+ 
+ .showcase {
+    width: 40rem;
+    height: 100%;
+  }
+
+ /* TRANSITIONS */
+ .home_image {
+    object-fit: contain;
+  }
+ .showcase {
+    animation-name: and;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+  }
+  
+
+  @keyframes and {
+    0% {
+      background: url("https://ng.jumia.is/cms/0-1-initiatives/flashsale/2023/Slider.png")
+        no-repeat center center / cover;
+    }
+    30% {
+      background: url("https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w13-easter/712x384_new_easter.png")
+        no-repeat center center / cover;
+    }
+  
+    65% {
+      background: url("https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w14-fashion-explosion/Desktop_Homepage_Slider__712x384.png") no-repeat
+        center center / cover;
+    }
+  
+    100% {
+      background: url("https://ng.jumia.is/cms/0-1-weekly-cps/0-2023/w13-easter/712x384_new_easter.png")
+        no-repeat center center / cover;
+    }
+  }
+  
+  @media (max-width: 378px) {
+    .off {
+      display: none;
+    }
+    .intro {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      height: 100%;
+      margin-left: 2rem;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 20rem;
+      margin: auto auto;
+      margin-bottom: 0px;
+      height: 100%;
+    }
+    .category_icons {
+      height: 10px;
+      width: 1px;
+    }
+    .category_items {
+      display: flex;
+      margin: 5px;
+    }
+  }
+  
+  @media (max-width: 999px) {
+    .off {
+      display: none;
+    }
+    .showcase {
+      width: 40rem;
+      height: 100%;
+    }
+    .home_image {
+      object-fit: contain;
+    }
+    .showcase {
+      animation-name: and;
+      animation-duration: 9s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+    @keyframes and {
+      0% {
+        background: url("https://ng.jumia.is/cms/0-1-initiatives/flashsale/2023/Slider.png")
+          no-repeat center center / contain;
+      }
+      30% {
+        background: url("https://ng.jumia.is/cms/0-1-initiatives/flashsale/2023/Slider.png")
+          no-repeat center center / contain;
+      }
+  
+      65% {
+        background: url("https://ng.jumia.is/cms/0-1-initiatives/flashsale/2023/Slider.png")
+          no-repeat center center / contain;
+      }
+  
+      100% {
+        background: url("https://ng.jumia.is/cms/0-1-initiatives/flashsale/2023/Slider.png")
+          no-repeat center center / contain;
+      }
+    }
+  }
+  @media (max-width: 516px) {
+    .intro {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+    }
+    .showcase {
+      max-width: 20rem;
+      height: 100%;
+    }
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      max-height: 7.5rem;
+    }
+    .category_items {
+      display: flex;
+      align-items: center;
+      margin: 5pxpx;
+      height: 2rem;
+    }
+  }
+  @media (max-width: 318px) {
+    .categories {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  
